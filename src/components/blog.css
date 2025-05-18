@@ -1,0 +1,156 @@
+
+.blog{
+    margin-top:5%;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+   
+    text-align: center;
+    animation:moveUp 3s;
+    transition: 0.9s;
+}
+.blog:hover{
+    transform: scale(1.0); /* zoom in effect */
+    transition: 0.5s;
+
+}
+
+.blog img{
+    height : auto;
+    width: 300px;
+}
+
+
+.blog button{
+    width: 0%;
+    height: 30px;
+    cursor: pointer;
+    background-color: darkturquoise;
+    border-radius: 5px;
+}
+
+
+.main-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin:0;
+    padding: 5px;
+    margin:auto;
+
+}
+
+.main-container img{
+    width: 300px;
+    border: 2px solid black;
+    float: left;
+    margin-top: 10px;
+    animation: moveUp 3s;
+    
+}
+
+.main-container img:hover{
+    transform:scale(1.0);
+    transition: 0.9s;
+    border: 3px solid #39FF14;
+    
+}
+.intro-container h1{
+    text-align:center;
+    text-emphasis: bold;
+    font-size:50px;
+}
+
+.main-container p{
+    text-align:  center;
+
+    font-weight: bold;
+}
+
+.main-container .cards{
+    border: 1px solid black;
+    margin: 5px;
+    padding:10px;
+   
+}
+
+.cards img{
+    height:auto;
+}
+
+.cards a{
+  padding: 10px 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.cards a:hover {
+  opacity: 0.8;
+}
+.cards:hover{
+    border: 3px solid white;
+    transform: scale(1.0);
+    transition: 0.5s;
+    
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .blog{
+        width: 87%;
+    }
+    .main-container img{
+        width: 100%;
+    }
+    .blog button{
+        width: 80%;
+    }
+    .intro-container h1{
+        font-size: 30px;
+    }
+    
+}
+/* Project animations section*/
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} 
+@keyframes moveUp{
+    0%{
+        transform:translateY(10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes moveLeft {
+    0%{
+        transform:translateX(100px);
+    }
+    100%{
+        transform:translateX(0);
+    }    
+}

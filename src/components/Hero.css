@@ -1,0 +1,204 @@
+
+
+.hero {
+  height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-content h1 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero-btn:hover {
+  background-color: #444;
+}
+
+.profile {
+  width:300px;
+  height:auto;
+  border-radius: 10%;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 7px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  background-color: white;
+}  
+
+@media (max-width: 600px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 30px;
+  }
+  .hero-content h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  
+  }
+
+  .hero-content p {
+    font-size: 1.0rem;
+    color: #444;
+    margin-bottom: 2px;
+  }
+
+  .hero-btn {
+    padding: 10px 10px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease in-out; 
+  }
+  .hero-btn:hover {
+    background-color: #444;
+  }
+
+  .profile {
+    width: 90%;
+    margin: 50px auto -50%;
+    display: block;
+    padding:4px;
+    margin-bottom: 1px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Defining CSS variables for light and dark themes */
+
+body.light-mode {
+  --bg-color: #f8f9fa;
+  --text-color: #222;
+  --btn-bg: #222;
+  --btn-text: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --btn-bg: #eee;
+  --btn-text: #121212;
+}
+
+.hero {
+  height: 100vh;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero p {
+  color: var(--text-color);
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  opacity: 0.8;
+}
+
+.theme-toggle-btn {
+  
+  margin-top: 1rem;
+  padding: 5px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.3rem;
+  
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.8;
+}
+.theme-toggle-btn {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:active {
+  transform: scale(1.1) rotate(10deg);
+}
+
