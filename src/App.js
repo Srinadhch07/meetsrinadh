@@ -92,6 +92,7 @@ function App() {
         });
 
   return (
+
     <BrowserRouter basename="/meetsrinadh">
           <Nav darkMode={darkMode} setDarkMode={setDarkMode} name={name} fade={fade} />
         
@@ -106,6 +107,7 @@ function App() {
           </Routes>
     </BrowserRouter>
   
+
   );
 }
 
