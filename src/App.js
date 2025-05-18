@@ -92,22 +92,20 @@ function App() {
         });
 
   return (
-    <>
-    
-    <Router>
-      <Nav darkMode={darkMode} setDarkMode={setDarkMode} name={name} fade={fade} />
-
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact name={name} />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/achivements" element={<Achivements />} />
-        <Route path="/hub" element={<Hub />} />
-      </Routes>
-    </Router>
-  </>
+    <BrowserRouter basename="/meetsrinadh">
+          <Nav darkMode={darkMode} setDarkMode={setDarkMode} name={name} fade={fade} />
+        
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact name={name} />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/achivements" element={<Achivements />} />
+            <Route path="/hub" element={<Hub />} />
+          </Routes>
+    </BrowserRouter>
+  
   );
 }
 
