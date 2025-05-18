@@ -54,7 +54,7 @@ useEffect(() => {
 
     {/* Logo Setup */}
     <picture>
-        <source media="(max-width: 600px)" srcSet={`${process.env.PUBLIC_URL}/images/logo303.jpg`} />
+        <source media="(max-width: 600px)" srcSet="images/Logo303.jpg" />
         <img
           src={`${process.env.PUBLIC_URL}/images/logo302.jpg`}
           alt="Logo"
