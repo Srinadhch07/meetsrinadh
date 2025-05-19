@@ -1,5 +1,5 @@
 
-import { BrowserRouter , Routes, Route } from "react-router-dom";
+import { HashRouter as Router , Routes, Route } from "react-router-dom";
 import  { useState, useEffect } from "react";
 
 import Nav from "./components/nav";
@@ -93,7 +93,7 @@ function App() {
 
   return (
 
-    <BrowserRouter basename="/meetsrinadh">
+    <Router>
           <Nav darkMode={darkMode} setDarkMode={setDarkMode} name={name} fade={fade} />
         
           <Routes>
@@ -105,7 +105,7 @@ function App() {
             <Route path="/achivements" element={<Achivements />} />
             <Route path="/hub" element={<Hub />} />
           </Routes>
-    </BrowserRouter>
+    </Router>
   
 
   );
