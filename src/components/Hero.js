@@ -83,7 +83,7 @@ useEffect(() => {
         </h1>
         <p>Full-Stack Developer | AI & ML Practitioner | Freelancer | Data analyst</p>
         <p>I build modern solutions that are clean and responsive.</p>
-        <a href="https://srinadhch07.github.io/meetsrinadh/documents/resume.pdf" download="SRINADH CHINTAKINDI Resume" className="hero-btn">Resume</a>
+        <a href="/documents/resume.pdf" download="SRINADH CHINTAKINDI Resume" className="hero-btn">Resume</a>
         <br></br>
       </div>
     </section>
